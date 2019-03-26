@@ -9,15 +9,18 @@
       window.alert("Let's Party...");
       var tillParty = prompt("How long 'til the party?");
       tillParty= parseInt(tillParty);
-      for (var i = tillParty; i<=10 && i>=1; i=i-1) {
-        console.log(i);
-            console.log("It's party time!");
-    }
 
-    if (i===0) {
 
-        console.log("PARTY NOW!!!!");
-    }
+      for (var i = tillParty; i>=1 && i<=10; i=i-1) {
+            if (i<=0) {
+              console.log("PARTY NOW!!!");
+        }
+              else if (i>=11) {
+                console.log("Too late!");
+        }
+          console.log(i);
+}
+console.log("Time to party!")
 
 
       </script>

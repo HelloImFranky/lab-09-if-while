@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+
+
+
+      var numbAns0 = prompt("Enter your first number");
+      var numbAns1 = prompt("Enter your second number");
+      var numbAns2 = prompt("Enter your third number");
+      var numbAns3 = prompt("Enter your fourth number");
+
+      var arrayAns = [numbAns0, numbAns1, numbAns2, numbAns3]
+
+      var result = arrayAns.map(function (x){
+        return parseInt(x,10);
+      });
+      console.log((result[0]+result[1]+result[2]+result[3])/result.length);
+      </script>
+
+  </body>
+</html>

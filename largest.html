@@ -7,23 +7,14 @@
   <body>
     <script>
 
-      var numb0 = prompt("Enter your first number");
-      var numb1 = prompt("Enter your second number");
-      var numb2 = prompt("Enter your third number");
-      var numb3 = prompt("Enter your fourth number");
-
-      var allAns = [numb0, numb1, numb2, numb3]
-
-      var result = allAns.map(function (x){
-        return  parseInt(x);
-      });
-
-function biggestNumber(){
-      var numberChecking = 0;
-      for (var i =0; i<result[i]; i++) {
-        if ( i >
+var highestNumb = 0
+      for (var i = 0; i<4; i++) {
+        var askNumb = parseInt(prompt("Give me a number"));
+        if (highestNumb<askNumb){
+          highestNumb=askNumb;
+        }
       }
-    }
+      console.log(highestNumb)
       </script>
 
   </body>
